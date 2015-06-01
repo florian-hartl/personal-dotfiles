@@ -1,0 +1,15 @@
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+	ui = true
+[core]
+	pager = less -r
+	editor = vim
+[alias]
+	lol = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	lola = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	up = "!git remote update -p; git merge --ff-only @{u}"
+[apply]
+	ignorewhitespace = change
