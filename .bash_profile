@@ -9,6 +9,7 @@ export HISTTIMEFORMAT="%F %T $ "
 alias curlc='curl --silent --show-error --dump-header /dev/stderr'
 alias hgrep='history | grep'
 alias ll='ls -alh'
+alias har='history -a && history -r'
 
 # custom prompt
 function parse_git_branch_and_add_brackets {
