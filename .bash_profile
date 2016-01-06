@@ -15,7 +15,7 @@ alias har='history -a && history -r'
 function parse_git_branch_and_add_brackets {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \[\1\]/'
 }
-PS1="${debian_chroot:+($debian_chroot)}\[\e[00;34m\]\u\[\e[m\]@\[\e[00;32m\]\h\[\e[m\]:\[\e[00;33m\]\w\[\e[m\]\[\e[00;36m\]\$(parse_git_branch_and_add_brackets) \[\e[m\]$ "
+PS1="\[\e[1;34m\]\u\[\e[m\]@\[\e[1;32m\]\h\[\e[m\]:\[\e[1;33m\]\w\[\e[m\]\[\e[1;36m\]\$(parse_git_branch_and_add_brackets)\[\e[m\]$ "
 
 # enable coloring of terminal (mac)
 export CLICOLOR=1
