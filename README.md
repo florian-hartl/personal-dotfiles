@@ -1,6 +1,6 @@
 Installation:
 
-    git clone https://github.com/HaFl/personal-dotfiles.git ~/.dotfiles
+    git clone https://github.com/florian-hartl/personal-dotfiles.git ~/.dotfiles
 
 Create symlinks:
 
