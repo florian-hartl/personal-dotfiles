@@ -13,3 +13,7 @@
 	up = "!git remote update -p; git merge --ff-only @{u}"
 [apply]
 	ignorewhitespace = change
+[user]
+	name = Florian Hartl
+[url "git@github.com:"]
+	insteadOf = https://github.com/
