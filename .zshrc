@@ -73,7 +73,9 @@ plugins=(
     github
     kubectl
     kube-ps1
+    zsh-autosuggestions
     zsh-syntax-highlighting
+    autojump
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -110,5 +112,8 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 
 cdpath=(
   $cdpath
+  $HOME
   ~/workspace
 )
+
+DISABLE_UNTRACKED_FILES_DIRTY="true"
